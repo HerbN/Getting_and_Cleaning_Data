@@ -1,14 +1,20 @@
 # Getting_and_Cleaning_Data
 Course work for John's Hopkins Coursera course of the same name.
 
-##Files
-There are two files in this respository:
+## Files
+There are three files in this respository:
 
-perform_analysis.R: Takes the raw input data, tidies it up, saves the tidy data, 
-                    does the analysis, and outputs the analysis as tidy data to disk and screen.
-                    This is run with source('perform_analysis.R').
+### perform_analysis.R
+
+Takes the raw input data, tidies it up, saves the tidy data, does the analysis, and outputs the analysis as tidy data to disk and screen. This is run with source('perform_analysis.R').
                     
-data_dictonary.txt: Describes the variables in both data sets.
+### data_dictonary.txt
+
+Describes the variables in both the tidy data resulting from the first part of the perform analysis script and the analysis results from the second part.
+  
+### raw_data_README.txt
+
+The README file included with the raw data.  The data_dictionary references it.  It also provides additional details about the gathering of the data.
 
 ## Outline of tidying process
 
