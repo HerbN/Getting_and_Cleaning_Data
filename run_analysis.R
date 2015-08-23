@@ -52,7 +52,7 @@ for( subset in data_subsets )
                               fsep = .Platform$file.sep );
    subject_table <- read.table(subject_file);
    activity_table <- read.table(activity_file);
-   e
+   observation_table <- read.table(observation_file);
 
    ## All three tables should have the same row count
    if (  nrow(subject_table) == nrow(activity_table)
