@@ -8,7 +8,7 @@ There are three files in this respository:
 
 Takes the raw input data, tidies it up, saves the tidy data, does the analysis, and outputs the analysis as tidy data to disk and screen. This is run with source('perform_analysis.R').
                     
-### data_dictonary.txt
+### data_dictonary.md
 
 Describes the variables in both the tidy data resulting from the first part of the perform analysis script and the analysis results from the second part.
   
