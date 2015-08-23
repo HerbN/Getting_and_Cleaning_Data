@@ -2,7 +2,7 @@
 Course work for John's Hopkins Coursera course of the same name.
 
 ## Files
-There are five files in this respository:
+There are seven files in this respository:
 
 ### README.md
 
@@ -23,6 +23,14 @@ The README file included with the raw data.  The data_dictionary references it. 
 ### raw_data_features_info.txt
 
 The description of the variables included with the raw data.  The data_dictionary references it.  It provides additional details on variable naming, measurement processing, and variables not selected for inclusion in the tidy data set and later analysis.
+
+### samsung_data_tidy.txt
+
+The results of write.table on the tidy data set.
+
+### analysis_results_tidy.txt
+
+The results of write.table on the analysis results.
 
 ## Outline of tidying process
 
