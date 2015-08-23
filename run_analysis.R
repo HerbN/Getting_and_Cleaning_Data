@@ -52,7 +52,7 @@ for( subset in data_subsets )
                               fsep = .Platform$file.sep );
    subject_table <- read.table(subject_file);
    activity_table <- read.table(activity_file);
-   observation_table <- read.table(observation_file);
+   e
 
    ## All three tables should have the same row count
    if (  nrow(subject_table) == nrow(activity_table)
@@ -104,6 +104,14 @@ tidy_analysis <- aggregate(tidy_data_frame[, 3:ncol(tidy_data_frame)],
                                 activity = tidy_data_frame$activity), 
                            mean);
 
+## Update row names in analysis results
+target_names <- subset(names(tidy_analysis), ! grepl("subject|activity", names(tidy_analysis), perl=TRUE))
+for( name in target_names )
+	{
+	post_analysis_name <- paste("Mean", "of", name, sep='_');
+	names(tidy_analysis)[names(tidy_analysis) == name] <- post_analysis_name;
+   }
+
 ## Write analysis results to disk and the screen
-write.table(tidy_analysis, 'analysis_results_tidy.txt');
+write.table(tidy_analysis, 'analysis_results_tidy.txt', row.names=FALSE);
 print(tidy_analysis);
