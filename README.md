@@ -2,11 +2,15 @@
 Course work for John's Hopkins Coursera course of the same name.
 
 ## Files
-There are three files in this respository:
+There are five files in this respository:
 
-### perform_analysis.R
+### README.md
 
-Takes the raw input data, tidies it up, saves the tidy data, does the analysis, and outputs the analysis as tidy data to disk and screen. This is run with source('perform_analysis.R').
+This file.
+
+### run_analysis.R
+
+Takes the raw input data, tidies it up, saves the tidy data, does the analysis, and outputs the analysis as tidy data to disk and screen. This is run with source('run_analysis.R').
                     
 ### data_dictonary.md
 
@@ -15,6 +19,10 @@ Describes the variables in both the tidy data resulting from the first part of t
 ### raw_data_README.txt
 
 The README file included with the raw data.  The data_dictionary references it.  It also provides additional details about the gathering of the data.
+
+### raw_data_features_info.txt
+
+The description of the variables included with the raw data.  The data_dictionary references it.  It provides additional details on variable naming, measurement processing, and variables not selected for inclusion in the tidy data set and later analysis.
 
 ## Outline of tidying process
 
